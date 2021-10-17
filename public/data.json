@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "title": "HIGH-INTENSITY TRAINING (HIT)",
+        "img": "https://i.ibb.co/BnJ9FN3/HIGH-INTENSITY.jpg",
+        "description": "If you love exercising outdoors, and get a thrill from bootcamp-style fitness classes which challenge your whole body, you'll love HIT.",
+        "detailDis": "The High-intensity training (HIT) class experience can be fully customized to the speed that's right for you, so it's perfect for all skill levels. Headphones required.",
+        "intensity": "Medium & Heigh",
+        "feel": "Empowered",
+        "maximize": "Cardio Stamina",
+        "price": "20$/mo - 5 workouts",
+        "time": "40 min",
+        "dates": "Mon,Wed,Thu,Fri,Sat"
+    },
+    {
+        "id": "2",
+        "title": "CROSSFIT",
+        "img": "https://i.ibb.co/xSSPrTJ/CROSFIT.jpg",
+        "description": "The magic is in the movement. CrossFit workouts are different every day and can be modified to help each athlete achieve their goals.",
+        "detailDis": "Crossfit workouts are different every day and can be modified to help each athlete achieve their goals. The workouts may be adapted for people at any age and level of fitness.",
+        "intensity": "Heigh",
+        "feel": "Empowered",
+        "maximize": "Cardio Stamina",
+        "price": "30$/mo - 3 workouts",
+        "time": "30 min",
+        "dates": "Mon,Wed,Thu,Fri"
+    },
+    {
+        "id": "3",
+        "title": "BOXING",
+        "img": "https://i.ibb.co/QXStZZ6/Boxing.jpg",
+        "description": "If you love exercising outdoors, and get a thrill from bootcamp-style fitness classes which challenge your whole body, you'll love Boxing.",
+        "detailDis": "Our workouts are next-level challenging. Boxing, plyometrics and body-weight exercises are fused into one high-intensity interval-training session that works your full body and mind.",
+        "intensity": "Medium & Heigh",
+        "feel": "Empowered",
+        "maximize": "Cardio Stamina",
+        "price": "40$/mo - 5 workouts",
+        "time": "60 min",
+        "dates": "Mon,Tue,Wed,Fri,Sat"
+    },
+    {
+        "id": "4",
+        "title": "YOGA & PILATES",
+        "img": "https://i.ibb.co/tY8XsNh/YOGA.jpg",
+        "description": "While both yoga and Pilates are low-impact exercises and can be performed on a mat, they're actually totally different workouts.",
+        "detailDis": "When you’re craving a little more intensity, F7 conditioning classes will help you strengthen and tone your body—and break a serious sweat. Whatever your life stage or experience level you’ll find workouts that support your goals.",
+        "intensity": "Medium & Heigh",
+        "feel": "Empowered",
+        "maximize": "Cardio Stamina",
+        "price": "35$/mo - 5 workouts",
+        "time": "45 min",
+        "dates": "Mon,Tue,Wed,Fri,Sat"
+    },
+    {
+        "id": "5",
+        "title": "BATTLEBOX",
+        "img": "https://i.ibb.co/vxgBgcP/BATTLEBOX.jpg",
+        "description": "With plenty of space and fresh air to make the most of, it’s easy to see why so many people love to take their exercise routine outdoors.",
+        "detailDis": "Combining full body fitness training, high energy challenges, teamwork and all-important fresh air, a 45 minute Battlebox class will challenge you physically and mentally, whilst providing a unique alternative to your usual routine.",
+        "intensity": "Medium & Heigh",
+        "feel": "High Energy",
+        "maximize": "Cardio Stamina",
+        "price": "25$/mo - 5 workouts",
+        "time": "45 min",
+        "dates": "Mon,Wed,Fri"
+    },
+    {
+        "id": "6",
+        "title": "LEG PRESS",
+        "img": "https://i.ibb.co/br7HQqT/LEG-PREES.jpg",
+        "description": "The leg press is a compound weight training exercise in which the individual pushes a weight or resistance away from them using their legs. The term leg press machine refers to the apparatus used to perform this exercise.",
+        "detailDis": "The leg press is a compound weight training exercise in which the individual pushes a weight or resistance away from them using their legs. The term leg press machine refers to the apparatus used to perform this exercise.",
+        "intensity": "Medium & Heigh",
+        "feel": "Empowered",
+        "maximize": "Cardio Stamina",
+        "price": "37$/mo - 5 workouts",
+        "time": "30 min",
+        "dates": "Mon,Wed,Thu,Sat"
+    }
+]
