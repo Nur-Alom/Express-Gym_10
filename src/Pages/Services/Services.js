@@ -5,7 +5,7 @@ const Services = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('./data.json')
+        fetch('https://nur-alom.github.io/jsonapi/mydata.json')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

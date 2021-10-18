@@ -1,0 +1,50 @@
+.contact-form{
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ct-title{
+    color: #0e1133;
+    font-weight: 700;
+    text-align: start;
+}
+
+.ct-text{
+    color: #53545b  ;
+    text-align: start;
+}
+input{
+    margin-bottom: 20px;
+}
+textarea{
+    color: #53545b;
+    background-color: #f3f4f8;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.input-subject{
+    background-color: #f3f4f8;
+    width: 74%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+}
+.info{
+    margin-top: 60px
+}
+.input-email{
+    margin-left: 20px;
+    background-color: #f3f4f8;
+    width: 36%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+}
+.input-name{
+    background-color: #f3f4f8;
+    width: 36%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+}

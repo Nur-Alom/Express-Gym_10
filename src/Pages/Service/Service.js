@@ -1,20 +1,25 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import './Service.css';
+import { Card } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Service = (props) => {
-    const { img, title, description, price } = props.service;
-    console.log(title)
+    const { id, img, title, description, price } = props.service;
 
     return (
         <div className="col-md-4 my-3">
             <Card className="" style={{ width: '20rem' }}>
                 <Card.Img variant="top" style={{ height: '250px' }} src={img} />
                 <Card.Body>
-                    <Card.Title><span className="fw-normal">Name:</span> {title}</Card.Title>
-                    <Card.Text>Price: {price}</Card.Text>
+                    <Card.Title><span className="fw-bold">Name:</span> {title}</Card.Title>
+                    <Card.Text><span className="fw-bold">Price:</span> {price}</Card.Text>
+                    <hr />
                     <Card.Text>{description}</Card.Text>
-                    <Button variant="warning text-white fw-bold rounded-pill">Enroll Now</Button>
-                    <Button variant="success text-white fw-bold rounded-pill ms-3">More..</Button>
+                    <hr />
+                    <div className="my-2">
+                        <NavLink to="/" className="enroll-btn rounded-pill">Enroll Now</NavLink>
+                        <NavLink to={`/class/${id}`} className="detail-btn rounded-pill">More..</NavLink>
+                    </div>
                 </Card.Body>
             </Card>
         </div>

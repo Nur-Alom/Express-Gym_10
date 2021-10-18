@@ -1,0 +1,61 @@
+
+.main{
+    box-shadow: 10px 10px 50px lightgray;
+    border-radius: 20px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px;
+    padding: 40px 20px;
+}
+
+.data-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.input-login{
+    margin-bottom: -8px !important;
+    padding: 3px 75px;
+    border: none;
+    background-color: #F2F4F4;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login-btn{
+    color: white;
+    background-color: #03D6B9;
+    padding: 3px 146px;
+    border: 0px;
+    
+}
+
+.google-btn{
+    margin-left: 105px;
+    border: none;
+    font-size: 30px;
+    color: tomato;
+    background-color: white;
+}
+
+.github-btn{
+    margin-left: 30px;
+    border: none;
+    font-size: 30px;
+    color: #2c2b2b;
+    background-color: white;
+}
+
+.image{
+    width: 420px;
+}
