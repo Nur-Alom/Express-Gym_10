@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "title": "HIGH-INTENSITY TRAINING (HIT)",
+        "title": "HIGH-INTENSITY",
         "img": "https://i.ibb.co/BnJ9FN3/HIGH-INTENSITY.jpg",
         "description": "If you love exercising outdoors, and get a thrill from bootcamp-style fitness classes which challenge your whole body, you'll love HIT.",
         "detailDis": "The High-intensity training (HIT) class experience can be fully customized to the speed that's right for you, so it's perfect for all skill levels. Headphones required.",
@@ -68,7 +68,7 @@
         "id": "6",
         "title": "LEG PRESS",
         "img": "https://i.ibb.co/br7HQqT/LEG-PREES.jpg",
-        "description": "The leg press is a compound weight training exercise in which the individual pushes a weight or resistance away from them using their legs. The term leg press machine refers to the apparatus used to perform this exercise.",
+        "description": "The leg press is a compound weight training exercise in which the individual pushes a weight or resistance away from them using their legs.",
         "detailDis": "The leg press is a compound weight training exercise in which the individual pushes a weight or resistance away from them using their legs. The term leg press machine refers to the apparatus used to perform this exercise.",
         "intensity": "Medium & Heigh",
         "feel": "Empowered",

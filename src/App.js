@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Header from './Pages/Header/Header';
+import Footer from './Pages/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -20,7 +22,11 @@ function App() {
           <Route path="/about">
             <AboutUs></AboutUs>
           </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
