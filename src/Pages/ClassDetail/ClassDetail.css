@@ -1,0 +1,50 @@
+.d-main{
+    background-color: #191919;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding: 65px;
+    border-radius: 25px;
+}
+
+.detail-img{
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.detail-info{
+    margin-left: 60px;
+}
+
+.detail-text{
+    color: white;
+}
+
+.detail-data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+}
+
+.detail-data li{
+    list-style: none;
+    color: white;
+}
+
+.d-name{
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.more-btn{
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: green;
+    margin-top: 30px;
+}

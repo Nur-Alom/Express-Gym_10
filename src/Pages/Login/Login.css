@@ -59,3 +59,9 @@
 .image{
     width: 420px;
 }
+
+@media only screen and(max-width: 440px) {
+    .image{
+        display: none;
+    }
+}

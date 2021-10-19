@@ -1,0 +1,36 @@
+
+.shop-title{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.proteins-img{
+    width: 250px;
+}
+
+.p-product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+.buy-btn{
+    background-color: goldenrod;
+    color: white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* -------------- */
+
+
+@media only screen and (max-width:440px) {
+    .p-product{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+}

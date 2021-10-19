@@ -1,5 +1,5 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword, signOut } from "firebase/auth";
-import { useState } from "react";
+import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 
 initializeAuthentication();
@@ -9,13 +9,38 @@ const githubProvider = new GithubAuthProvider();
 const auth = getAuth();
 
 const useFirebase = () => {
+    const [loading, setLoading] = useState(true);
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [displayName, setDisplayName] = useState('');
     const [users, setUsers] = useState({});
 
+    const handleLoginEmailPassword = () => {
+        setLoading(true);
+        signInWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+                const user = result.user;
+                setUsers(user)
+                console.log(user);
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
+            .finally(() => setLoading(false))
+    }
+
+    const setUserName = () => {
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => {
+
+            })
+            .catch((error) => {
+
+            });
+    }
+
     const handleName = (e) => {
-        setDisplayName(e.target.value);
+        setName(e.target.value);
     }
 
     const handleEmail = (e) => {
@@ -27,55 +52,77 @@ const useFirebase = () => {
     }
 
     const handleRegister = (e) => {
-        console.log(displayName, email, password);
-        createUserWithEmailAndPassword(auth, displayName, email, password)
+        setLoading(true);
+        createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
-                console.log(user);
+                setUserName(user.displayName);
+                setUsers(user);
             })
-            .catch((error) => {
-            });
-        e.preventDefault();
+            .catch(error => {
+
+            })
+            .finally(() => setLoading(false));
     }
 
     const googleLogin = () => {
+        setLoading(true);
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 const user = result.user;
                 setUsers(user);
             })
-            .catch((error) => {
+            .catch(error => {
 
-            });
+            })
+            .finally(() => setLoading(false));
     };
 
     const githubLogin = () => {
+        setLoading(true);
         signInWithPopup(auth, githubProvider)
             .then((result) => {
                 const user = result.user;
                 setUsers(user);
             })
-            .catch((error) => {
-                console.log(error.message);
-            });
+            .catch(error => {
+
+            })
+            .finally(() => setLoading(false));
     };
 
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUsers(user)
+            }
+            else {
+                setUsers({})
+            }
+            setLoading(false);
+        });
+    }, [])
+
     const logOut = () => {
+        setLoading(true);
         signOut(auth)
             .then(() => {
                 setUsers({});
             })
-            .catch((error) => {
+            .catch(error => {
 
-            });
+            })
+            .finally(() => setLoading(false));
     };
 
     return {
         users,
+        loading,
         handleName,
         handleEmail,
         handlePassword,
         handleRegister,
+        handleLoginEmailPassword,
         googleLogin,
         githubLogin,
         logOut
