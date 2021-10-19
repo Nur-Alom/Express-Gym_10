@@ -17,7 +17,7 @@ const Header = () => {
                         <NavLink className="nav" to="/about">About</NavLink>
                         <NavLink className="nav" to="/contact">Contact</NavLink>
                         {users.email ? <li style={{ color: "white", margin: "5px" }}>| {users.displayName}</li> : ''}
-                        {!users.displayName ?
+                        {!users.email ?
                             <NavLink className="user-btn bg-success text-white py-1 px-3 rounded-3" to="/login"><i className="fas fa-sign-in-alt"></i> Login</NavLink> :
                             <button onClick={logOut} className="user-btn bg-success text-white py-1 px-3 rounded-3 border-0"><i className="fas fa-sign-out-alt"></i> Logout</button>
                         }
