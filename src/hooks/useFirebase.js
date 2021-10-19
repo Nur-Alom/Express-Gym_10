@@ -21,7 +21,6 @@ const useFirebase = () => {
             .then((result) => {
                 const user = result.user;
                 setUsers(user)
-                console.log(user);
             })
             .catch(error => {
                 console.log(error.message);
