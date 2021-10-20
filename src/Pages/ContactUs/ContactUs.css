@@ -48,3 +48,10 @@ textarea{
     border-radius: 5px;
     padding: 12px;
 }
+
+@media only screen and (max-width: 440px) {
+    textarea{
+        height: 182px;
+        width: 300px;
+    }
+}

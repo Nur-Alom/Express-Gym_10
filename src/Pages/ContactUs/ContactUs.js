@@ -15,7 +15,7 @@ const ContactUs = () => {
                     <br />
                     <input className="input-subject" type="text" placeholder="Subject" />
                     <br />
-                    <textarea name="" id="" cols="110" rows="10">Enter Your Massage</textarea>
+                    <textarea cols="110" rows="10">Enter Your Massage</textarea>
                 </div>
             </div>
         </div>
