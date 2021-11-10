@@ -14,6 +14,7 @@ import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 function App() {
+
   return (
     <div className="App">
       <AuthProvider>
